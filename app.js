@@ -50,7 +50,7 @@ function createObsidianNote(filePath) {
         }
     }
 
-    noteContent += insertLinksToOtherClasses(fileContent);
+    noteContent += insertLinksToOtherClasses(fileContent, noteTitle);
     // Add the file content to the note as a fenced code block
     noteContent += '```java\n' + fileContent + '\n```';
     // Write the note content to the note
@@ -83,25 +83,25 @@ function getFileNames(sourceDirectory) {
     return classNames;
 }
 
-function insertLinksToOtherClasses(fileContent){
+function insertLinksToOtherClasses(fileContent, noteTitle){
     // Create a RegExp to match "new ClassName(), classname.methodName(), etc."
-    const newInstanceRegExp = /\b([\w]+)(\.\w+)?(\.\w+)?(\s+)?\(.*?\)/g;
+    // const newInstanceRegExp = /\b([\w]+)(\.\w+)?(\.\w+)?(\s+)?\(.*?\)/g;
 
-    let match;
+    // let match;
     let linkedClasses = new Set(); // To avoid adding multiple links to the same class
     noteLinksSection = 'Refers To:\n';
 
-    while ((match = newInstanceRegExp.exec(fileContent)) !== null) {
-        thisMatch = match[1];
-        if ( classNames.includes(thisMatch) &&
-             !thisMatch.toLowerCase().endsWith('__c') &&
-             !linkedClasses.has(thisMatch) ) 
+    // Filter classNames to keep only those names that are included in fileContent
+    let foundItems = classNames.filter(str => (str != noteTitle && (fileContent.includes(' '+str) || fileContent.includes('='+str) ) ));
+    foundItems.forEach(item => {
+        if(!linkedClasses.has(item) ) 
             {
                 // Add a link to the referenced class in Obsidian format
-                noteLinksSection += `[[${thisMatch}]]\n`;
-                linkedClasses.add(thisMatch);
+                noteLinksSection += `[[${item}]]\n`;
+                linkedClasses.add(item);
             }
-    }
+    });
+
     return noteLinksSection + '\n\n';
 }
 

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6a0b982ce400dc3b",
+        "id": "1abc8110e433e8d4",
         "type": "tabs",
         "children": [
           {
-            "id": "c7153e41897d6d61",
+            "id": "a3f0572b321de93f",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "9ac54f374955a5f3",
@@ -84,7 +85,7 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -138,9 +139,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c7153e41897d6d61",
+  "active": "a3f0572b321de93f",
   "lastOpenFiles": [
-    "AccountPlanActionController.md",
-    "ConsultantProjectDaysControllerTest.md"
   ]
 }

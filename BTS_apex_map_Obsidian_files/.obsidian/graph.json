@@ -5,18 +5,68 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": false,
-  "colorGroups": [],
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "file:Schedulable",
+      "color": {
+        "a": 1,
+        "rgb": 14129945
+      }
+    },
+    {
+      "query": "file:trigger",
+      "color": {
+        "a": 1,
+        "rgb": 13776695
+      }
+    },
+    {
+      "query": "Database.Batchable",
+      "color": {
+        "a": 1,
+        "rgb": 959527
+      }
+    },
+    {
+      "query": "System.schedule",
+      "color": {
+        "a": 1,
+        "rgb": 14262048
+      }
+    },
+    {
+      "query": "file:Service",
+      "color": {
+        "a": 1,
+        "rgb": 8671968
+      }
+    },
+    {
+      "query": "auraenabled",
+      "color": {
+        "a": 1,
+        "rgb": 5419488
+      }
+    },
+    {
+      "query": "@RestResource",
+      "color": {
+        "a": 1,
+        "rgb": 15749489
+      }
+    }
+  ],
   "collapse-display": true,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
+  "showArrow": true,
+  "textFadeMultiplier": -2.8,
+  "nodeSizeMultiplier": 1.14635416666667,
+  "lineSizeMultiplier": 1.19739583333333,
   "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.270833333333333,
+  "repelStrength": 18.125,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.2186038359901869,
+  "linkDistance": 30,
+  "scale": 0.0702453666338347,
   "close": false
 }

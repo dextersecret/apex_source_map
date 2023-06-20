@@ -6,7 +6,7 @@ const includeTests = process.argv.includes('t');
 // Define the directory containing your Apex classes
 const apexClassesDirectory = 'C:/Users/vlmi/Documents/myVSCodeProjects/Feb23/bts-sfdx/force-app/main/default/classes';
 // Define the directory where Obsidian notes will be created
-const obsidianNotesDirectory = './BTS_apex_map_Obsidian_files';
+const obsidianNotesDirectory = './apex_map_Obsidian_files';
 
 function run() {
     classNames.push(...getFileNames(apexClassesDirectory));

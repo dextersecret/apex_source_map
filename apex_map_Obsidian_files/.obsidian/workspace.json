@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "1abc8110e433e8d4",
+        "id": "5b18c18350bfd500",
         "type": "tabs",
         "children": [
           {
-            "id": "a3f0572b321de93f",
+            "id": "a092063ddf0692b1",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -139,7 +139,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3f0572b321de93f",
+  "active": "a092063ddf0692b1",
   "lastOpenFiles": [
+    "BtsDashboard_SalesPracticeService.md",
+    "BtsDashboard_ConfigUtils.md",
+    "DateTimeUtils.md",
+    "CoachingRestResource.md",
+    "ConsultantUtilities.md",
+    "SessionService.md",
+    "AccountPlanActionModalController.md",
+    "FileUtils.md",
+    "OutlookUpdateVacationService.md",
+    "BtsDataCreatorTest.md",
+    "BtsDashboard_ProjectTotalAccumulatorTest.md",
+    "BtsDashboard_OfficeTotalAccumulatorTest.md",
+    "BtsDashboard_OfficeProjectAccTest.md",
+    "BtsDashboard_CurrencyQtrlyFxStoreTest.md",
+    "BtsDashboard_CurrencyFxStoreTest.md",
+    "BtsDashboard_ConfigUtilsTest.md",
+    "BookingSystemUtilsTest.md",
+    "VacationTriggerHandlerTest.md",
+    "StaffingTriggerTest.md",
+    "SolutionTriggerTest.md",
+    "SolutionTriggerHandlerTest.md",
+    "SessionTriggerTest.md",
+    "RepeatingVacationTriggerTest.md",
+    "ProjectTriggerTest.md",
+    "ParticipantTriggerTest.md",
+    "OutlookUpdateTriggerTest.md"
   ]
 }

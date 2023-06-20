@@ -5,5 +5,12 @@ For each '.cls' file it finds, it creates an Obsidian note with the same name an
 
 
 === HOW TO USE ===
-1. Replace /path/to/your/directory and /path/to/your/obsidian/directory with your own paths before running the script.
+0. Install Obsidian: Obsidian is a free, local-first, markdown-based knowledge management tool. Download and install it from the official website: https://obsidian.md/.
+1. Replace 'C:/ ... /force-app/main/default/classes' with your own path before running the script.
 2. run command: `node app.js`
+
+x. Open Obsidian and point your vault to the directory. Default: './BTS_apex_map_Obsidian_files'.
+y. Use the Graph view to explore the repository.
+z. Use the search bar to search for keywords in the repository.
+%. Use the backlinks to see which classes are using the class you are currently viewing.
+$: Use the outline view to see the class structure.

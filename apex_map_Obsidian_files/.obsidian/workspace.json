@@ -6,14 +6,140 @@
       {
         "id": "5b18c18350bfd500",
         "type": "tabs",
+        "dimension": 33.76168224299065,
         "children": [
           {
-            "id": "a092063ddf0692b1",
+            "id": "660eed8c51b34c7f",
             "type": "leaf",
             "state": {
               "type": "graph",
               "state": {}
             }
+          },
+          {
+            "id": "7d2681eb359899db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutlookIntegrationHandler.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c40dd39bc43065bd",
+        "type": "tabs",
+        "dimension": 39.7196261682243,
+        "children": [
+          {
+            "id": "a092063ddf0692b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OutlookEventConfiguration.md",
+                "mode": "source",
+                "source": false
+              }
+            },
+            "group": "f0cd2e484d89be4c"
+          }
+        ]
+      },
+      {
+        "id": "6c6cbbfb5034bde4",
+        "type": "tabs",
+        "dimension": 26.518691588785053,
+        "children": [
+          {
+            "id": "27796266fdd59593",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "OutlookEventConfiguration.md",
+                "options": {
+                  "collapse-filter": false,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": false,
+                  "colorGroups": [
+                    {
+                      "query": "file:Schedulable",
+                      "color": {
+                        "a": 1,
+                        "rgb": 14271807
+                      }
+                    },
+                    {
+                      "query": "file:trigger",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13647422
+                      }
+                    },
+                    {
+                      "query": "Database.Batchable",
+                      "color": {
+                        "a": 1,
+                        "rgb": 4645426
+                      }
+                    },
+                    {
+                      "query": "System.schedule",
+                      "color": {
+                        "a": 1,
+                        "rgb": 15854110
+                      }
+                    },
+                    {
+                      "query": "file:Service",
+                      "color": {
+                        "a": 1,
+                        "rgb": 13254118
+                      }
+                    },
+                    {
+                      "query": "auraenabled",
+                      "color": {
+                        "a": 1,
+                        "rgb": 5419488
+                      }
+                    },
+                    {
+                      "query": "@RestResource",
+                      "color": {
+                        "a": 1,
+                        "rgb": 15219607
+                      }
+                    }
+                  ],
+                  "collapse-display": true,
+                  "showArrow": true,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1.09186851211073,
+                  "lineSizeMultiplier": 3.17733564013841,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "f0cd2e484d89be4c"
           }
         ]
       }
@@ -139,33 +265,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a092063ddf0692b1",
+  "active": "27796266fdd59593",
   "lastOpenFiles": [
-    "BtsDashboard_SalesPracticeService.md",
-    "BtsDashboard_ConfigUtils.md",
-    "DateTimeUtils.md",
-    "CoachingRestResource.md",
-    "ConsultantUtilities.md",
-    "SessionService.md",
-    "AccountPlanActionModalController.md",
-    "FileUtils.md",
-    "OutlookUpdateVacationService.md",
-    "BtsDataCreatorTest.md",
-    "BtsDashboard_ProjectTotalAccumulatorTest.md",
-    "BtsDashboard_OfficeTotalAccumulatorTest.md",
-    "BtsDashboard_OfficeProjectAccTest.md",
-    "BtsDashboard_CurrencyQtrlyFxStoreTest.md",
-    "BtsDashboard_CurrencyFxStoreTest.md",
-    "BtsDashboard_ConfigUtilsTest.md",
-    "BookingSystemUtilsTest.md",
-    "VacationTriggerHandlerTest.md",
-    "StaffingTriggerTest.md",
-    "SolutionTriggerTest.md",
-    "SolutionTriggerHandlerTest.md",
-    "SessionTriggerTest.md",
-    "RepeatingVacationTriggerTest.md",
-    "ProjectTriggerTest.md",
-    "ParticipantTriggerTest.md",
-    "OutlookUpdateTriggerTest.md"
   ]
 }

@@ -6,8 +6,11 @@ It finds relationships between classes and adds them to the notes as links.
 
 === USING THE APP ===
 0. Install Obsidian: Obsidian is a free, local-first, markdown-based knowledge management tool. Download and install it from the official website: https://obsidian.md/.
-1. Replace 'C:/ ... /force-app/main/default/classes' with your own path before running the script.
-2. run command: `node app.js` To include tests include the `t` parameter: `node app.js t`
+
+2. run command: `node app.js` with the following parameters:
+    - `d` - directory to read Apex classes from.
+    - `t` - include test classes. (not recommended)
+    Example: `node app.js d "C:/ ... /force-app/main/default/classes" t`
 3. Open Obsidian and point your vault to the directory with notes. Default: './apex_map_Obsidian_files'.
 
 ===== OBSIDIAN NAVIGATION =====

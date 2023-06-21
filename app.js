@@ -1,15 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const classNames = [];
+const classNamesToReference = [];
 const includeTests = process.argv.includes('t');
-
-// Define the directory containing your Apex classes
-const apexClassesDirectory = 'C:/Users/vlmi/Documents/myVSCodeProjects/Feb23/bts-sfdx/force-app/main/default/classes';
+// Default Apex classes directory (used if no directory is passed via command line)
+let apexClassesDirectory = './';
 // Define the directory where Obsidian notes will be created
 const obsidianNotesDirectory = './apex_map_Obsidian_files';
 
 function run() {
-    classNames.push(...getFileNames(apexClassesDirectory));
+    processPassedParams();
+    classNamesToReference.push(...getFileNames(apexClassesDirectory));
     deleteOldNotes(obsidianNotesDirectory);
     processDirectory(apexClassesDirectory);
 }
@@ -60,7 +60,7 @@ function createObsidianNote(filePath) {
 
 // Function to read all class names in the source directory and its subdirectories
 function getFileNames(sourceDirectory) {
-    let classNames = [];
+    let classNamesToReference = [];
 
     // Use a helper function to recursively search subdirectories
     function searchDirectory(directory) {
@@ -75,12 +75,14 @@ function getFileNames(sourceDirectory) {
                 searchDirectory(filePath);
             } else if (path.extname(file) === '.cls') {
                 // If the file is a .cls file, add its name (without the extension) to the array
-                classNames.push(path.basename(file, '.cls'));
+                let fileName = path.basename(file, '.cls');
+                                
+                if (!fileName.endsWith('Exception')){ classNamesToReference.push(fileName); }
             }
         }
     }
     searchDirectory(sourceDirectory);
-    return classNames;
+    return classNamesToReference;
 }
 
 function insertLinksToOtherClasses(fileContent, noteTitle){
@@ -91,8 +93,8 @@ function insertLinksToOtherClasses(fileContent, noteTitle){
     let linkedClasses = new Set(); // To avoid adding multiple links to the same class
     noteLinksSection = 'Refers To:\n';
 
-    // Filter classNames to keep only those names that are included in fileContent
-    let foundItems = classNames.filter(str => (str != noteTitle && (fileContent.includes(' '+str) || fileContent.includes('='+str) ) ));
+    // Linking to other class names found in the repository and referenced in the file
+    let foundItems = classNamesToReference.filter(str => (str != noteTitle && (fileContent.includes(' '+str) || fileContent.includes('='+str) ) ));
     foundItems.forEach(item => {
         if(!linkedClasses.has(item) ) 
             {
@@ -118,6 +120,15 @@ function deleteOldNotes(directoryPath) {
             fs.unlinkSync(filePath);
         }
     }
+}
+
+function processPassedParams() {
+   // Check if the "a" parameter was provided
+   let aIndex = process.argv.indexOf('d');
+   if (aIndex !== -1 && process.argv[aIndex + 1]) {
+       // If the "a" parameter was provided and there's another argument after it, use it as the directory
+       apexClassesDirectory = process.argv[aIndex + 1];
+   }
 }
 
 // Start the exploration

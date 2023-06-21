@@ -123,10 +123,10 @@ function deleteOldNotes(directoryPath) {
 }
 
 function processPassedParams() {
-   // Check if the "a" parameter was provided
+   // Check if the "d" parameter was provided
    let aIndex = process.argv.indexOf('d');
    if (aIndex !== -1 && process.argv[aIndex + 1]) {
-       // If the "a" parameter was provided and there's another argument after it, use it as the directory
+       // If the "d" parameter was provided and there's another argument after it, use it as the directory
        apexClassesDirectory = process.argv[aIndex + 1];
    }
 }

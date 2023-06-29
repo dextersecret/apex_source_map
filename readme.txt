@@ -1,3 +1,5 @@
+## Display an Apex directory as a linked Obsidian graph
+
 This script:
 
 Reads the given directory and its subdirectories for '.cls' files.

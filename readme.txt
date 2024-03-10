@@ -11,12 +11,13 @@ It finds relationships between classes and adds them to the notes as links.
 
 2. run command: `node app.js` with the following parameters:
     - `d` - directory to read Apex classes from.
-    - `t` - include test classes. (not recommended)
+    - `t` - include test classes. (not recommended - thediagram will get too cluttered)
     Example: `node app.js d "C:/ ... /force-app/main/default/classes" t`
 3. Open Obsidian and point your vault to the directory with notes. Default: './apex_map_Obsidian_files'.
 
 ===== OBSIDIAN NAVIGATION =====
 - Use the Graph view to explore the repository.
+- The nodes represent classes, the node colour formatting is pre-set based on a class type.
 - Use the search bar to search for keywords in the repository.
 - The links show relationships between classes.
 - Hold Ctrl and hover over a node to see class contents. Click on the node while holding Ctrl to open the file in a new tab.

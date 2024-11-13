@@ -1,3 +1,5 @@
+![alt text](https://github.com/dextersecret/apex_source_map/blob/trunk/diagramexample.bmp?raw=true)
+
 ## Display an Apex directory as a linked Obsidian graph
 
 This script:
@@ -12,7 +14,7 @@ It finds relationships between classes and adds them to the notes as links.
 
 2. run command: `node app.js` with the following parameters:
     - `d` - directory of Apex classes in your sfdx project
-    - `t` - include test classes. (not recommended - thediagram will get too cluttered)
+    - `t` - include test classes. (not recommended - the diagram may get too cluttered)
     
     Example:
 

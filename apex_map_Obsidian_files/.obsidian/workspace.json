@@ -4,12 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5b18c18350bfd500",
+        "id": "b90807f020ad54f1",
         "type": "tabs",
-        "dimension": 33.76168224299065,
         "children": [
           {
-            "id": "660eed8c51b34c7f",
+            "id": "4f2e03fcd83b1e35",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -17,131 +16,15 @@
             }
           },
           {
-            "id": "7d2681eb359899db",
+            "id": "c3f6a2b027daa57b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutlookIntegrationHandler.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ]
-      },
-      {
-        "id": "c40dd39bc43065bd",
-        "type": "tabs",
-        "dimension": 39.7196261682243,
-        "children": [
-          {
-            "id": "a092063ddf0692b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OutlookEventConfiguration.md",
-                "mode": "source",
-                "source": false
-              }
-            },
-            "group": "f0cd2e484d89be4c"
-          }
-        ]
-      },
-      {
-        "id": "6c6cbbfb5034bde4",
-        "type": "tabs",
-        "dimension": 26.518691588785053,
-        "children": [
-          {
-            "id": "27796266fdd59593",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "OutlookEventConfiguration.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": false,
-                  "colorGroups": [
-                    {
-                      "query": "file:Schedulable",
-                      "color": {
-                        "a": 1,
-                        "rgb": 14271807
-                      }
-                    },
-                    {
-                      "query": "file:trigger",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13647422
-                      }
-                    },
-                    {
-                      "query": "Database.Batchable",
-                      "color": {
-                        "a": 1,
-                        "rgb": 4645426
-                      }
-                    },
-                    {
-                      "query": "System.schedule",
-                      "color": {
-                        "a": 1,
-                        "rgb": 15854110
-                      }
-                    },
-                    {
-                      "query": "file:Service",
-                      "color": {
-                        "a": 1,
-                        "rgb": 13254118
-                      }
-                    },
-                    {
-                      "query": "auraenabled",
-                      "color": {
-                        "a": 1,
-                        "rgb": 5419488
-                      }
-                    },
-                    {
-                      "query": "@RestResource",
-                      "color": {
-                        "a": 1,
-                        "rgb": 15219607
-                      }
-                    }
-                  ],
-                  "collapse-display": true,
-                  "showArrow": true,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1.09186851211073,
-                  "lineSizeMultiplier": 3.17733564013841,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 1,
-                  "close": false
-                }
-              }
-            },
-            "group": "f0cd2e484d89be4c"
-          }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -191,8 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "9ac54f374955a5f3",
@@ -265,7 +147,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "27796266fdd59593",
+  "active": "c3f6a2b027daa57b",
   "lastOpenFiles": [
+    "ProjectUtilities.md",
+    "ConsultantUtilities.md",
+    "BTS_Exception.md",
+    "BtsTabItem.md",
+    "BtsLightningClassicRedirector.md",
+    "BtsDataCreator.md",
+    "BtsDashboard_ProjectTotalAccumulator.md",
+    "BtsDashboard_OfficeTotalAccumulator.md",
+    "BtsDashboard_OfficeProjectAccumulator.md",
+    "BtsDashboard_CurrencyQuarterlyFxStore.md",
+    "BtsDashboard_CurrencyFxStore.md",
+    "BtsDashboard_ConsultantCreditUtilities.md",
+    "BtsDashboard_ConfigUtils.md",
+    "BookingSystemUtils.md",
+    "ConsultantTriggerHandler.md",
+    "AttendeeTriggerHandler.md",
+    "ActEmailTriggerHandler.md",
+    "ActEmailLibraryTriggerHandler.md",
+    "CoachOSServiceMock.md",
+    "ActSendActionEmailsBatch.md",
+    "ActEmailUtilities.md",
+    "ActEmailLanguageConfiguration.md",
+    "ResourcingCalendarFiltersUtils.md",
+    "InputLookupController.md",
+    "CRMSettingService.md",
+    "CRMFeatureSwitch.md",
+    "Untitled.canvas"
   ]
 }

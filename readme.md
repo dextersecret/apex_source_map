@@ -1,6 +1,6 @@
 ![alt text](https://github.com/dextersecret/apex_source_map/blob/trunk/diagramexample.bmp?raw=true)
 
-## Display an Apex directory as a linked Obsidian graph
+## Visualise relationships between Apex classes in your sfdx project directory
 
 This script:
 

@@ -6,7 +6,7 @@ This script:
 
 Reads the given directory and its subdirectories for '.cls' files.
 For each '.cls' file it finds, it creates an Obsidian note with the same name and content in the given Obsidian notes directory.
-It finds relationships between classes and adds them to the notes as links.
+It finds relationships between classes and adds them to the notes as links. Class contents are accessible for preview through corresponding nodes.
 
 ### USING THE APP
 

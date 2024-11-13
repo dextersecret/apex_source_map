@@ -12,11 +12,15 @@ It finds relationships between classes and adds them to the notes as links.
 2. run command: `node app.js` with the following parameters:
     - `d` - directory of Apex classes in your sfdx project
     - `t` - include test classes. (not recommended - thediagram will get too cluttered)
-    Example: `node app.js d "C:/ ... /force-app/main/default/classes" t` or relative path `node app.js d "../{anotherDirectory}/force-app/main/default/classes" t`
-3. Open Obsidian and point your vault to the directory with notes. Default: './apex_map_Obsidian_files'.
+    Example: 
+        `node app.js d "C:/ ... /force-app/main/default/classes" t`
+    or using a relative path:
+        `node app.js d "../{anotherDirectory}/force-app/main/default/classes" t`
+3. Open Obsidian and point your vault to the directory with notes that were just created. Default: './apex_map_Obsidian_files'.
 
 ===== OBSIDIAN NAVIGATION =====
 - Use the Graph view to explore the repository.
+- the folder apex_map_Obsidian_files already contains obsidian graph visualisation settings and filters.
 - The nodes represent classes, the node colour formatting is pre-set based on a class type.
 - Use the search bar to search for keywords in the repository.
 - The links show relationships between classes.

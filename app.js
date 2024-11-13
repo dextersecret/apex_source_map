@@ -8,10 +8,12 @@ let apexClassesDirectory = './';
 const obsidianNotesDirectory = './apex_map_Obsidian_files';
 
 function run() {
+    console.log('\x1b[36m%s\x1b[0m', 'Running...');
     processPassedParams();
     classNamesToReference.push(...getFileNames(apexClassesDirectory));
     deleteOldNotes(obsidianNotesDirectory);
     processDirectory(apexClassesDirectory);
+    console.log('\x1b[36m%s\x1b[0m', 'DONE!');
 }
 
 // Recursive function to explore directories and create notes
